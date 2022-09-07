@@ -1,0 +1,89 @@
+.Header{
+
+    .container{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    height: 88px;
+    font-size: $font-size-24;
+    background-color: $color-black;
+
+    &__logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: $color-white;
+        .abstract-logo{
+            height: 2rem;
+            width: 126px;
+        }
+        :nth-child(2){
+            display: flex;
+            align-items: center;
+            height: 2.1rem;
+            border-left: 2px solid $color-white;
+            margin-left: 13px;
+            padding: 6px 12px;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__buttons{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+
+        @include mq("desktop"){
+            display: none;
+        }
+
+        button{
+            color:$color-white;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        &__submit{
+            width: 230px;
+            background-color: #191a1b;
+            border: 1px solid $color-white;
+            border-radius: 8px;
+            padding: 10px 16px;
+        }
+        &__sign-in{
+            width: 140px;
+            padding: 10px 16px;
+            border-radius: 8px;
+            background-color: $color-blue;
+            margin-left: 12px;
+            transition: .3s;
+            &:hover{
+                background-color: $color-white;
+                color: #191a1b;
+            }
+        }
+
+        &__responsive{
+            display: none;
+            margin-left: auto;
+            button{
+                background-color:$color-black;
+            }
+            @include mq("desktop"){
+                display: block;
+            }
+            @include mq("tablet"){
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+}
