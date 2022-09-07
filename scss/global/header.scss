@@ -18,6 +18,11 @@
         .abstract-logo{
             height: 2rem;
             width: 126px;
+            &:hover{
+                filter: invert(24%) sepia(0%) saturate(1283%) hue-rotate(51deg) brightness(96%) contrast(89%);
+            }
+
+
         }
         :nth-child(2){
             display: flex;
