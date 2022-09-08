@@ -17,3 +17,9 @@ Live URL 💻 : https://erentasci-frontendpractice-abstract.vercel.app/
 ✅ Searchbox Section
 <br>
 ✅ Main Section
+<br>
+✅ Footer Section
+<br>
+✅ Responsive Design
+
+
