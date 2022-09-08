@@ -1,0 +1,160 @@
+.Footer{
+    width: 100vw;
+    height: 500px;
+    background-color: black;
+
+    a:hover{
+        text-decoration: underline;
+    }
+
+    @include mq("tablet"){
+        height: 650px;
+    }
+
+    @include mq("desktop"){
+        height: 800px;
+    }
+
+
+
+
+    .container{
+        width: 100%;
+        height: 100%;
+        padding: 30px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        @include mq("tablet"){
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding-left: 30px;
+
+        }
+
+        @include mq("desktop"){
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            padding-left: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    
+
+    }
+
+
+
+
+        &__categories{
+            height: 100%;
+            width: 70vw;
+            color: $color-white;
+            display: flex;
+            flex-direction: row;
+            line-height: 24px;
+            padding: 10px 0;
+
+            @include mq("tablet"){
+                width: 95vw;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+            }
+
+            @include mq("desktop"){
+                width: 95vw;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+
+            &__item{
+                display: flex;
+                flex-direction: column;
+                padding: 20px 35px;
+                margin-left: auto;
+                margin-right: auto;
+
+                @include mq("desktop"){
+                    width: 320px;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                }
+
+                @include mq("tablet"){
+                    width: 50%;
+                }
+
+                
+
+
+ 
+
+
+                h3{
+                    margin-bottom: 20px;
+                    font-size: $font-size-24;
+                }
+
+                a{
+                    font-size: 16px;
+                }
+
+                strong{
+                    font-size: 16px;
+                    margin-top: 20px;
+                }
+
+            }
+        }
+        &__info{
+            height: 100%;
+            width: 35vw;
+            color: $color-white;
+            display: flex;
+            flex-direction:column;
+            justify-content: flex-end;
+            padding-left: 150px;
+            padding-bottom: 50px;
+            padding-right: 10px;
+            margin-top: auto;
+
+            @include mq("desktop"){
+                height: 30%;
+                width: 95vw;
+                display: flex;
+                flex-direction: column;
+                align-items:flex-start;
+                padding-left:450px;
+            }
+
+
+            svg{
+                height: 35px;
+                width: 130px;
+                margin-bottom: 20px;
+            }
+            p{
+                margin-bottom: 5px;
+            }
+
+            @include mq("tablet"){
+                width: 95vw;
+                display: flex;
+                flex-direction: column;
+                padding-left: 60px;
+                margin-right: auto;
+                margin-left:auto;
+            }
+        }
+
+}
