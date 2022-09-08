@@ -9,6 +9,7 @@ Live URL 💻 : https://erentasci-frontendpractice-abstract.vercel.app/
 ```
 - HTML5, CSS3
 - SCSS-SASS
+- Gulpfile.js , Browsersync
 - Responsive Design
 ```
 Website Screenshot:
