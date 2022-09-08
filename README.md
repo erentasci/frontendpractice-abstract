@@ -16,7 +16,7 @@ Website Screenshot:
 ![screenshot](https://www.frontendpractice.com/_next/image?url=%2Ffullsize%2FC2-abstract.png&w=1200&q=90)
 
 
-✅ Header 
+✅ Header Section
 <br>
 ✅ Searchbox Section
 <br>
